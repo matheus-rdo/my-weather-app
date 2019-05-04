@@ -4,6 +4,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var weatherAPI = require('./components/weather/weatherAPI');
 var AppError = require('./utils/appError')
+var cors = require('cors')
 
 var app = express();
 
@@ -11,6 +12,7 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
+app.use(cors())
 
 //Modules API's
 app.use('/weather', weatherAPI);

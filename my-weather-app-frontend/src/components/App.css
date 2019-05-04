@@ -1,12 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
 
+html {
+  height: 100%;
+}
+
 body {
+  padding-top: 10vh;
+  height: 100%;
   font-family: "Open Sans", serif;
+  background: linear-gradient(to bottom, #58bfe7, #03295a);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .wrapper {
-  background: linear-gradient(to bottom, #58bfe7, #03295a);
-  height: 100vh;
+
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;

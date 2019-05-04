@@ -22,9 +22,12 @@ const Day = styled.p`
     font-size: 12px;
 `
 
-export default function ForecastDay({ day }) {
+
+
+export default function ForecastDay({ day, onSelectDay }) {
+
     return (
-        <Container>
+        <Container onClick={() => onSelectDay(day)}>
             <Weekday>
                 {day.weekDay}
             </Weekday>
